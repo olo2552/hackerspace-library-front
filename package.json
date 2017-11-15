@@ -1,0 +1,23 @@
+{
+  "name": "hs-library-front",
+  "version": "0.0.1",
+  "description": "Front End for Hackerspace library platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "transpile": "babel index.js --out-file transpiled.index.js"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "ES6",
+    "Babel"
+  ],
+  "author": "Aleksander Wielgorski",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  },
+  "dependencies": {}
+}
