@@ -1,0 +1,70 @@
+*, *:after, *:before, html {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.5rem;
+}
+
+main {
+	width: 60%;
+}
+
+.terminal:before {
+	content: '>';
+	margin-right: .5em;
+}
+
+/* blinking coursor on the last line of the text content */
+.terminal:last-child:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: .75rem;
+	height: 1.5rem;
+	background-color: black;
+}
+
+.blinking:after {
+	animation-name: blink;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}
+
+@keyframes blink {
+	0% {
+		visibility: visible;
+	}
+	
+	50%, 100% {
+		visibility: hidden;
+	}
+}
+
+.login-buttons li {
+	display: inline-block;
+}
+
+.login-buttons a {
+	display: inline-block;
+	height: 100%;
+	width:100%;
+	cursor: default;
+	text-decoration: none;
+	color: black;
+}
+
+.member-login {
+	border-width: 3px;
+	border-color: #f44336;
+}
+
+img .distraction {
+	height: 80%;
+	width: 20%;
+}
