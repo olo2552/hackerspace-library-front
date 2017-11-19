@@ -1,0 +1,61 @@
+*, *:after, *:before, html {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1E1E1E;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.5rem;
+}
+
+/* upper navigation component */
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hs-logo-wrapper {
+	display: inline-flex;
+	flex-direction: column;
+	width: 25%;
+	justify-content: center;
+}
+
+.hs-logo {
+	width: 100%;
+}
+
+.navigation-links {
+	display: inline-block;
+}
+
+.navigation-link {
+	display: inline-block;
+	margin-right: .5em;
+	padding: .5em .75em;
+	background-color: #2B2B2B;
+}
+
+.navigation-link:last-child {
+	margin-right: 0;
+}
+.navigation-link a {
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	color: white;
+	text-decoration: none;
+	font-size: .5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+}
